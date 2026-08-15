@@ -1,1 +1,136 @@
-style.css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f7f9f7;
+}
+
+/* Header */
+header {
+    background: #0b5d3b;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+/* Navigation */
+nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #0b5d3b;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #0b5d3b;
+    color: white;
+}
+
+/* Main sections */
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 70px 25px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+}
+
+section h2 {
+    color: #0b5d3b;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 17px;
+}
+
+/* Programs */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background: #073d28;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 30px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        padding: 50px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    section {
+        padding: 45px 20px;
+        margin: 12px 0;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+}
