@@ -743,4 +743,149 @@ footer p {
         text-align: center;
     }
 
+}/* =========================================
+   ABOUT US
+   ========================================= */
+
+.about-section {
+    padding: 75px 7%;
+    background: #ffffff;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.about-content h3 {
+    color: #07552f;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.about-content p {
+    color: #555555;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+
+/* About Cards */
+
+.about-cards {
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.about-card {
+    background: #f8faf6;
+    padding: 32px 25px;
+    text-align: center;
+
+    border-radius: 10px;
+
+    border-top: 4px solid #07552f;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+}
+
+.about-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 18px;
+
+    background: #07552f;
+    color: #f2cf27;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.about-card h3 {
+    color: #07552f;
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #555555;
+    font-size: 15px;
+}
+
+
+/* Objectives */
+
+.objectives {
+    max-width: 1100px;
+    margin: 55px auto 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #07552f,
+            #0b7040
+        );
+
+    color: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 12px;
+}
+
+.objectives-text {
+    max-width: 850px;
+    margin: auto;
+}
+
+.objectives h3 {
+    text-align: center;
+    font-size: 28px;
+    color: #f2cf27;
+    margin-bottom: 25px;
+}
+
+.objectives ul {
+    padding-left: 25px;
+}
+
+.objectives li {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+
+/* Mobile About */
+
+@media (max-width: 700px) {
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        padding: 55px 5%;
+    }
+
+    .objectives {
+        padding: 30px 22px;
+    }
+
 }
