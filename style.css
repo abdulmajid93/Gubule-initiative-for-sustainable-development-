@@ -986,3 +986,296 @@ footer p {
     }
 
 }
+/* =========================================
+   OUR PROJECTS
+========================================= */
+
+.projects-section {
+    padding: 75px 6%;
+    background: #f7f8f4;
+}
+
+.section-intro {
+    max-width: 750px;
+    margin: 15px auto 0;
+    color: #666666;
+    font-size: 16px;
+}
+
+
+/* PROJECT GRID */
+
+.projects-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* PROJECT CARD */
+
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+
+/* PROJECT IMAGE */
+
+.project-image {
+    height: 210px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+}
+
+
+/* PROJECT CATEGORY */
+
+.project-category {
+    position: absolute;
+
+    left: 15px;
+    top: 15px;
+
+    background: #07552f;
+    color: #f2cf27;
+
+    padding: 7px 12px;
+
+    border-radius: 4px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* PROJECT PHOTOS */
+
+.tree-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=1000&q=85");
+}
+
+.hospital-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1599685315640-7c7f5a9f7e6d?auto=format&fit=crop&w=1000&q=85");
+}
+
+.housing-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1000&q=85");
+}
+
+.economy-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1497250681960-ef046c08a56e?auto=format&fit=crop&w=1000&q=85");
+}
+
+.agriculture-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1000&q=85");
+}
+
+.community-project {
+    background-image:
+        url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=85");
+}
+
+
+/* PROJECT CONTENT */
+
+.project-content {
+    padding: 24px;
+}
+
+.project-content h3 {
+    color: #07552f;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    margin-bottom: 12px;
+}
+
+.project-content p {
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+}
+
+
+/* PROJECT INFO */
+
+.project-info {
+    border-top: 1px solid #eeeeee;
+
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 12px 0;
+
+    margin-bottom: 15px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+.project-info span {
+    color: #777777;
+
+    font-size: 12px;
+}
+
+.project-info i {
+    color: #07552f;
+
+    margin-right: 4px;
+}
+
+
+/* PROJECT LINK */
+
+.project-link {
+    color: #07552f;
+
+    font-weight: bold;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.project-link i {
+    margin-left: 5px;
+}
+
+.project-link:hover {
+    color: #c49b00;
+}
+
+
+/* =========================================
+   PROJECT IMPACT
+========================================= */
+
+.project-impact {
+    max-width: 1100px;
+
+    margin: 55px auto 0;
+
+    background: #07552f;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    text-align: center;
+}
+
+.impact-number {
+    color: #ffffff;
+
+    padding: 10px;
+}
+
+.impact-number strong {
+    display: block;
+
+    color: #f2cf27;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin-bottom: 5px;
+}
+
+.impact-number span {
+    font-size: 14px;
+}
+
+
+/* =========================================
+   PROJECTS MOBILE
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-impact {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .projects-section {
+        padding: 55px 5%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+
+    .project-impact {
+        grid-template-columns: 1fr 1fr;
+
+        padding: 20px 10px;
+    }
+
+    .impact-number strong {
+        font-size: 28px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .project-impact {
+        grid-template-columns: 1fr;
+    }
+
+}
